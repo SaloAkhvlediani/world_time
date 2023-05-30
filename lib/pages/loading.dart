@@ -17,7 +17,7 @@ class _LoadingState extends State<Loading> {
    await instance.getTime();
    Navigator.pushReplacementNamed((context), '/home', arguments: {
      'location':instance.location,
-     'flag' : instance.location,
+     'flag' : instance.flag,
      'time': instance.time,
      'isDaytime':instance.isDaytime,
 
@@ -30,7 +30,7 @@ class _LoadingState extends State<Loading> {
   }
   // void getdata() async {
   //
-  //   // ბიექტი ვერ დავაბრუნე
+  //   // ონიექტი ვერ დავაბრუნე
   //   Response response = await
   //   http.get(Uri.parse("https://jsonplaceholder.typicode.com/todos/1"));
   //   print(response.body);

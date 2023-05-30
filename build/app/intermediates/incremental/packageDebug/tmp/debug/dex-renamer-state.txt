@@ -1,0 +1,4 @@
+#Tue May 30 12:51:25 GET 2023
+base.0=C\:\\Users\\sakhvlediani\\source\\repos\\world_time\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

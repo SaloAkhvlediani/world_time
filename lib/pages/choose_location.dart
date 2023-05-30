@@ -12,7 +12,7 @@ class _Choose_locationState extends State<Choose_location> {
   //int counter = 1;
   List<WorldTime> locations = [
     WorldTime(url: 'Europe/London', location: 'London', flag: 'uk.png'),
-    WorldTime(url: 'Europe/Berlin', location: 'Athens', flag: 'greece.png'),
+    WorldTime(url: 'Europe/Berlin', location: 'Berlin', flag: 'germany.png'),
     WorldTime(url: 'Africa/Cairo', location: 'Cairo', flag: 'egypt.png'),
     WorldTime(url: 'Africa/Nairobi', location: 'Nairobi', flag: 'kenya.png'),
     WorldTime(url: 'America/Chicago', location: 'Chicago', flag: 'usa.png'),
@@ -27,7 +27,7 @@ class _Choose_locationState extends State<Choose_location> {
    //navigate home screen
     Navigator.pop(context, {
       'location':instance.location,
-      'flag' : instance.location,
+      'flag' : instance.flag,
       'time': instance.time,
       'isDaytime':instance.isDaytime,
     });
@@ -54,6 +54,7 @@ class _Choose_locationState extends State<Choose_location> {
                onTap: () {
                  //print(locations[index].location);
                  updateTime(index);
+
                },
               title: Text(locations[index].location),
                 leading: CircleAvatar(
